@@ -11,7 +11,7 @@ class Test01():
     def test002(self):
         allure.attach('描述', '我是测试步骤002的描述～～～')
         print("test002被执行")
-        assert 0
+        assert 1
 
 
 
