@@ -1,0 +1,52 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1534575700177" stop="1534575700224">
+  <name>test000</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1534575700177" status="passed" stop="1534575700180">
+      <name>Test01.test001</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="1500-MainThread"/>
+        <label name="host" value="USER-20161126EY"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1534575700180" status="passed" stop="1534575700180">
+          <name>我是测试步骤001</name>
+          <title>我是测试步骤001</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1534575700181" status="failed" stop="1534575700224">
+      <name>Test01.test002</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>self = &lt;test000.Test01 object at 0x0000000003D5A278&gt;
+
+    @pytest.allure.severity(pytest.allure.severity_level.CRITICAL)
+    def test002(self):
+        allure.attach('描述', '我是测试步骤002的描述～～～')
+        print("test002被执行")
+&gt;       assert 0
+E       assert 0
+
+YAML\test000.py:14: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="6e00817b-b42e-4ca6-b9bd-9856b93d76f3-attachment.txt" title="描述" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="thread" value="1500-MainThread"/>
+        <label name="host" value="USER-20161126EY"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
